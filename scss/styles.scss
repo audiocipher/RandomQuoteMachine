@@ -1,0 +1,25 @@
+$bg_color: #D1CDCE;
+
+body {
+  background-color: $bg_color;
+}
+
+.jumbotron {
+  margin-top: 10em;
+  padding-top: 3em;
+  padding-bottom: 7em;
+}
+
+#tweet {
+  float: left;
+}
+
+#new-quote {
+  float: right;
+  line-height: 2em;
+}
+
+#credits {
+  font-style: italic;
+  margin-bottom: 5em;
+}
