@@ -1,25 +1,68 @@
-$bg_color: #D1CDCE;
+$body_color: white;
+$main_color: #E84A5F;
+
+$main_font: Georgia, Times, serif;
 
 body {
-  background-color: $bg_color;
+  background-color: $main_color;
 }
 
 .jumbotron {
   margin-top: 10em;
   padding-top: 3em;
   padding-bottom: 7em;
+  background-color: $body_color;
+  p {
+    color: $main_color;
+    font-size: 1.75em;
+  }
+
+  footer {
+    color: $main_color;
+    margin-left: 2em;
+    font-size: 1.25em;
+  }
+}
+
+blockquote {
+  font-family: $main_font;
+  font-style: italic;
+  margin: 0 auto;
+  padding: 0.25em 40px;
+  line-height: 1.45;
+  position: relative;
+  color: #383838;
+  border-left: 0;
+}
+
+blockquote:before {
+  display: block;
+  content: "\201C";
+  font-size: 80px;
+  position: absolute;
+  left: -20px;
+  top: -20px;
+  color: $main_color;
 }
 
 #tweet {
   float: left;
+  color: $main_color;
 }
 
 #new-quote {
   float: right;
+  color: $body_color;
+  background-color: $main_color;
+  font-family: $main_font;
+  font-size: 1.5em;
   line-height: 2em;
 }
 
 #credits {
+  font-family: $main_font;
   font-style: italic;
-  margin-bottom: 5em;
+  font-size: 1.5em;
+  margin-bottom: 3em;
+  color: $body_color;
 }

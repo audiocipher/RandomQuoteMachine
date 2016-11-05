@@ -58,32 +58,32 @@ $(function(){
   var quote_machine = new QuoteMachine();
 
   quote_machine.add_quote(
-    '\"Always remember: never accept the world as it appears to be; dare to see it for what it could be."',
+    'Always remember: never accept the world as it appears to be; dare to see it for what it could be.',
     'Overwatch Animated Short | "Recall"'
   );
 
   quote_machine.add_quote(
-    '\"Don\'t cry because it\'s over, smile because it happened.\"',
+    'Don\'t cry because it\'s over, smile because it happened.',
     'Dr. Seuss'
   );
 
   quote_machine.add_quote(
-    '\"The fool doth think he is wise, but the wise man knows himself to be a fool.\"',
+    'The fool doth think he is wise, but the wise man knows himself to be a fool.',
     'William Shakespeare'
   );
 
   quote_machine.add_quote(
-    '\"Two things are infinite: the universe and human stupidity; and I\'m not sure about the universe.\"',
+    'Two things are infinite: the universe and human stupidity; and I\'m not sure about the universe.',
     'Albert Einstein'
   );
 
   quote_machine.add_quote(
-    '\"So many books, so little time.\"',
+    'So many books, so little time.',
     'Frank Zappa'
   );
 
   quote_machine.add_quote(
-    '\"Be the change that you wish to see in the world.\"',
+    'Be the change that you wish to see in the world.',
     'Mahatma Gandhi'
   );
 

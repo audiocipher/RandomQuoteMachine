@@ -1,18 +1,55 @@
 body {
-  background-color: #D1CDCE; }
+  background-color: #E84A5F; }
 
 .jumbotron {
   margin-top: 10em;
   padding-top: 3em;
-  padding-bottom: 7em; }
+  padding-bottom: 7em;
+  background-color: white; }
+  .jumbotron p {
+    color: #E84A5F;
+    font-size: 1.75em; }
+  .jumbotron footer {
+    color: #E84A5F;
+    margin-left: 2em;
+    font-size: 1.25em; }
+
+blockquote {
+  font-family: Georgia, Times, serif;
+  font-style: italic;
+  margin: 0 auto;
+  padding: 0.25em 40px;
+  line-height: 1.45;
+  position: relative;
+  color: #383838;
+  border-left: 0; }
+
+blockquote:before {
+  display: block;
+  content: "\201C";
+  font-size: 80px;
+  position: absolute;
+  left: -20px;
+  top: -20px;
+  color: #E84A5F; }
 
 #tweet {
-  float: left; }
+  float: left;
+  color: #E84A5F; }
 
 #new-quote {
   float: right;
+  color: white;
+  background-color: #E84A5F;
+  font-family: Georgia, Times, serif;
+  font-size: 1.5em;
   line-height: 2em; }
 
 #credits {
+  font-family: Georgia, Times, serif;
   font-style: italic;
-  margin-bottom: 5em; }
+  font-size: 1.5em;
+  margin-bottom: 3em;
+  color: white; }
+
+/*# sourceMappingURL=styles.css.map */
