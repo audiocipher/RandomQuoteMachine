@@ -1,5 +1,16 @@
+/* good colors
+  red: #9e1527
+  orange: #b34700
+  yellow: n/a
+  green: #006600
+  blue: #0000b3
+  indigo: #3d0099
+  violet: #990099
+  brown: #664400
+*/
+
 $body_color: white;
-$main_color: #E84A5F;
+$main_color: #9e1527;
 
 $main_font: Georgia, Times, serif;
 
@@ -35,6 +46,7 @@ blockquote {
   border-left: 0;
 }
 
+/*
 blockquote:before {
   display: block;
   content: "\201C";
@@ -42,8 +54,9 @@ blockquote:before {
   position: absolute;
   left: -20px;
   top: -20px;
-  color: $main_color;
+  color: blue;
 }
+*/
 
 #tweet {
   float: left;

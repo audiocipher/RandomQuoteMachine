@@ -1,5 +1,15 @@
+/* good colors
+  red: #9e1527
+  orange: #b34700
+  yellow: n/a
+  green: #006600
+  blue: #0000b3
+  indigo: #3d0099
+  violet: #990099
+  brown: #664400
+*/
 body {
-  background-color: #E84A5F; }
+  background-color: #9e1527; }
 
 .jumbotron {
   margin-top: 10em;
@@ -7,10 +17,10 @@ body {
   padding-bottom: 7em;
   background-color: white; }
   .jumbotron p {
-    color: #E84A5F;
+    color: #9e1527;
     font-size: 1.75em; }
   .jumbotron footer {
-    color: #E84A5F;
+    color: #9e1527;
     margin-left: 2em;
     font-size: 1.25em; }
 
@@ -24,6 +34,7 @@ blockquote {
   color: #383838;
   border-left: 0; }
 
+/*
 blockquote:before {
   display: block;
   content: "\201C";
@@ -31,16 +42,17 @@ blockquote:before {
   position: absolute;
   left: -20px;
   top: -20px;
-  color: #E84A5F; }
-
+  color: blue;
+}
+*/
 #tweet {
   float: left;
-  color: #E84A5F; }
+  color: #9e1527; }
 
 #new-quote {
   float: right;
   color: white;
-  background-color: #E84A5F;
+  background-color: #9e1527;
   font-family: Georgia, Times, serif;
   font-size: 1.5em;
   line-height: 2em; }

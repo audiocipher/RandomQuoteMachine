@@ -117,11 +117,33 @@ $(function(){
 
   var change_quote = function(){
     update_href(); // update tweet href value
+    change_color(); // change color of the page
 
     current_quote = quote_machine.get_quote(); // get next quote object
     $el_quotation.text(current_quote.getQuote());
     $el_source.text(current_quote.getSource());
   };
+
+  var color_wheel = ['#9e1527',
+                     '#b34700',
+                     '#006600',
+                     '#0000b3',
+                     '#3d0099',
+                     '#990099',
+                     '#664400'];
+
+  var change_color = function(){
+    color_index = Math.floor((Math.random() * 7));
+
+    $el_body = $('body').css('background-color', color_wheel[color_index]);
+    $el_p = $('.jumbotron p').css('color', color_wheel[color_index]);
+    $el_foot = $('.jumbotron footer').css('color', color_wheel[color_index]);
+    //$el_block = $('blockquote:before').css('color', color_wheel[color_index]); // not possible
+    $el_tweet = $('#tweet').css('color', color_wheel[color_index]);
+    $el_quote = $('#new-quote').css('background-color', color_wheel[color_index]);
+  }
+
+  change_color();
 
   // create Listener for the New quote button
 
