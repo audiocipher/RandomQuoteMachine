@@ -23,6 +23,8 @@ body {
   padding-top: 3em;
   padding-bottom: 7em;
   background-color: $body_color;
+  height: 330px;
+  width: 750px;
   p {
     color: $main_color;
     font-size: 1.75em;
@@ -38,7 +40,9 @@ body {
 blockquote {
   font-family: $main_font;
   font-style: italic;
+  height: 170px;
   margin: 0 auto;
+  margin-bottom: 30px;
   padding: 0.25em 40px;
   line-height: 1.45;
   position: relative;
