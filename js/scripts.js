@@ -94,7 +94,7 @@ $(function(){
   var update_href = function(){
     let $elTweet = $('#tweet'); // reference to the DOM element
     let temp_obj = quote_machine.fetch_quote(); // temporary quote object to get quote and source from
-    let text = temp_obj.getQuote() + ' ' + temp_obj.getSource(); // concat quote and source
+    let text = temp_obj.getQuote() + ' \u2015' + temp_obj.getSource(); // concat quote and source
     let sub_url = encodeURIComponent(text); // convert to "href friendly" text
     let the_url = 'https://twitter.com/intent/tweet?text=' +
                   sub_url +
