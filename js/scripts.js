@@ -59,7 +59,7 @@ $(function(){
 
   quote_machine.add_quote(
     'Always remember: never accept the world as it appears to be; dare to see it for what it could be.',
-    'Overwatch Animated Short | "Recall"'
+    'Overwatch Animated Short "Recall"'
   );
 
   quote_machine.add_quote(
@@ -85,6 +85,26 @@ $(function(){
   quote_machine.add_quote(
     'Be the change that you wish to see in the world.',
     'Mahatma Gandhi'
+  );
+
+  quote_machine.add_quote(
+    'If you are not willing to risk the usual, you will have to settle for the ordinary.',
+    'Jim Rohn'
+  );
+
+  quote_machine.add_quote(
+    'Whenever you find yourself on the side of the majority, it is time to pause and reflect.',
+    'Mark Twain'
+  );
+
+  quote_machine.add_quote(
+    'Do not go where the path may lead, go instead where there is no path and leave a trail.',
+    'Ralph Waldo Emerson'
+  );
+
+  quote_machine.add_quote(
+    'If you can dream it, you can do it.',
+    'Walt Disney'
   );
 
   // twitter button functionality
@@ -124,22 +144,36 @@ $(function(){
     $el_source.text(current_quote.getSource());
   };
 
+  // colors in order: red, orange, green, blue, indigo, violet, brown, dark gold
   var color_wheel = ['#9e1527',
                      '#b34700',
                      '#006600',
                      '#0000b3',
                      '#3d0099',
                      '#990099',
-                     '#664400'];
+                     '#664400',
+                     '#806600'];
+
+  var current_color = -1; // used to remember previous color
 
   var change_color = function(){
-    color_index = Math.floor((Math.random() * 7));
+    var color_index; // used to update color of the page
+
+    do{
+      color_index = Math.floor((Math.random() * 8));
+    }
+    while(color_index === current_color);
+
+    current_color = color_index;
 
     $el_body = $('body').css('background-color', color_wheel[color_index]);
+
     $el_p = $('.jumbotron p').css('color', color_wheel[color_index]);
+
     $el_foot = $('.jumbotron footer').css('color', color_wheel[color_index]);
-    //$el_block = $('blockquote:before').css('color', color_wheel[color_index]); // not possible
+
     $el_tweet = $('#tweet').css('color', color_wheel[color_index]);
+
     $el_quote = $('#new-quote').css('background-color', color_wheel[color_index]);
   }
 

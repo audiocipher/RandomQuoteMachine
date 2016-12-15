@@ -1,13 +1,3 @@
-/* good colors
-  red: #9e1527
-  orange: #b34700
-  yellow: n/a
-  green: #006600
-  blue: #0000b3
-  indigo: #3d0099
-  violet: #990099
-  brown: #664400
-*/
 body {
   background-color: #9e1527; }
 
@@ -38,17 +28,6 @@ blockquote {
   color: #383838;
   border-left: 0; }
 
-/*
-blockquote:before {
-  display: block;
-  content: "\201C";
-  font-size: 80px;
-  position: absolute;
-  left: -20px;
-  top: -20px;
-  color: blue;
-}
-*/
 #tweet {
   float: left;
   color: #9e1527; }
